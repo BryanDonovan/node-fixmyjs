@@ -1,6 +1,6 @@
 var vows = require('vows');
 var assert = require('assert');
-var jshint = require('../lib/');
+var fixmyjs = require('../lib/');
 var EventEmitter = require('events').EventEmitter;
 var fs = require('fs');
 
@@ -16,12 +16,11 @@ tests.forEach(function (test) {
   spec["?"] = {
     topic: function () {
       var ev = new EventEmitter();
-      ev.on("done", function (io) {
-        this.callback(null, io.getCode());
-        io.clearCache();
+      ev.on("fixed", function (io) {
+        this.callback(null, io.modified);
       }.bind(this));
 
-      jshint.run(["node", "vows", file_n], ev);
+      fixmyjs.interpret(["node", "vows", file_n], ev);
     },
 
     "ok": function (topic) {

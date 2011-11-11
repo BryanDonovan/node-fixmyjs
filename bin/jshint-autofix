@@ -20,12 +20,15 @@ case "--dry-run":
   process.argv.splice(2, 1);
   /* falls through */
 default:
-  ev.on('done', function (io) {
+  ev.on('fixed', function (io) {
     if (dry_run) {
-      io.showDiff();
+      io.diff();
     } else {
-      io.writeFiles();
+      io.write();
     }
   });
-  require('../lib').run(process.argv, ev);
+  ev.on('done', function (io) {
+    console.log("Done.");
+  });
+  require('../lib').interpret(process.argv, ev);
 }
