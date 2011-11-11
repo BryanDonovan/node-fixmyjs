@@ -20,7 +20,7 @@ tests.forEach(function (test) {
         this.callback(null, io.modified);
       }.bind(this));
 
-      fixmyjs.interpret(["node", "vows", file_n], ev);
+      fixmyjs.interpret({ node: [null, file_n] }, ev);
     },
 
     "ok": function (topic) {
@@ -33,4 +33,4 @@ tests.forEach(function (test) {
   specs[test] = spec;
 });
 
-vows.describe("jshint-autofix").addBatch(specs).export(module);
+vows.describe("fixmyjs").addBatch(specs).export(module);

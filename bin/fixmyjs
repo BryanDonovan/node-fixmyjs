@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require('../lib')(process.argv);
+require('../lib').run(process.argv);
