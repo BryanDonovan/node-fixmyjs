@@ -6,4 +6,4 @@ Meant to automatically fix your lint errors in a non-destructive way.
 
 ## How to Install
 
-    npm install fixmyjs
+    sudo npm install fixmyjs -g
