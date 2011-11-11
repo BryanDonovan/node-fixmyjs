@@ -1,6 +1,6 @@
 {
   "name": "fixmyjs",
-  "version": "0.3.6",
+  "version": "0.4.0",
   "description": "Automatically fixes silly errors from jshint",
   "homepage": "http://github.com/goatslacker/node-fixmyjs",
   "author": {
@@ -20,6 +20,6 @@
   "devDependencies": {
     "vows": "0.5.x"
   },
-  "bin": { "jshint-autofix": "./bin/jshint-autofix" },
+  "bin": { "fixmyjs": "./bin/fixmyjs" },
   "preferGlobal" : true
 }
