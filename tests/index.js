@@ -20,7 +20,7 @@ tests.forEach(function (test) {
         this.callback(null, io.modified);
       }.bind(this));
 
-      fixmyjs.interpret({ node: [null, file_n] }, ev);
+      fixmyjs.interpret([file_n], ev);
     },
 
     "ok": function (topic) {
