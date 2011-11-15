@@ -14,7 +14,8 @@
     "url": "http://www.opensource.org/licenses/mit-license.php"
   },
   "dependencies": {
-    "commander": "0.3.2"
+    "commander": "0.3.2",
+    "minimatch": ">=0.0.4"
   },
   "devDependencies": {
     "vows": "0.5.x"
