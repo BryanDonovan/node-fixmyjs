@@ -24,5 +24,8 @@
   "onevar": false,
   "passfail": false,
   "regexp": false,
-  "sub": false
+  "sub": false,
+  "indentpref": "spaces",
+  "auto_indent": false,
+  "indent": 2
 }
