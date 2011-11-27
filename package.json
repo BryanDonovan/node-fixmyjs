@@ -1,6 +1,6 @@
 {
   "name": "fixmyjs",
-  "version": "0.5.5",
+  "version": "0.6.0",
   "description": "Automatically fixes silly errors from jshint",
   "homepage": "http://github.com/goatslacker/node-fixmyjs",
   "author": {
@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "commander": "0.3.2",
-    "minimatch": ">=0.0.4"
+    "minimatch": ">=0.0.4",
+    "diff": "1.0.1"
   },
   "devDependencies": {
     "vows": "0.5.x"
