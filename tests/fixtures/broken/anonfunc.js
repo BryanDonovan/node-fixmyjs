@@ -2,5 +2,3 @@
 
 (function () {
 })();
-
-(function () { })(); (function () { })();
