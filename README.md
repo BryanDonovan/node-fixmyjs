@@ -1,5 +1,8 @@
 # node-fixmyjs
 
+[![Build Status](https://secure.travis-ci.org/goatslacker/node-fixmyjs.png)](http://travis-ci.org/goatslacker/node-fixmyjs)
+
+
 This is the nodejs package for `jshint-autofix`
 
 Meant to automatically fix your lint errors in a non-destructive way.
