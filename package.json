@@ -21,6 +21,9 @@
   "devDependencies": {
     "vows": "0.5.x"
   },
+  "scripts": {
+    "test": "vows --spec"
+  },
   "bin": { "fixmyjs": "./bin/fixmyjs" },
   "preferGlobal" : true
 }
