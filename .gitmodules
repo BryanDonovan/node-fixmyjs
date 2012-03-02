@@ -1,6 +1,6 @@
 [submodule "packages/jshint"]
 	path = packages/jshint
-	url = git://github.com/goatslacker/jshint.git
+	url = git://github.com/jshint/jshint.git
 [submodule "packages/fixmyjs"]
 	path = packages/fixmyjs
-	url = git://github.com/goatslacker/jshint-autofix.git
+	url = git://github.com/jshint/fixmyjs.git
