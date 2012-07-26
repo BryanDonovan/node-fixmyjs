@@ -1,14 +1,15 @@
 {
   "name": "fixmyjs",
-  "version": "0.6.5",
+  "version": "0.7.0",
   "description": "Automatically fixes silly errors from jshint",
   "homepage": "http://github.com/goatslacker/node-fixmyjs",
-  "author": {
-    "name": "Josh Perez",
-    "email": "josh@goatslacker.com",
-    "url": "http://github.com/goatslacker"
-  },
-  "keywords": ["jshint", "hint", "lint", "jslint"],
+  "author": "Josh Perez <josh@goatslacker.com> (http://github.com/goatslacker)",
+  "keywords": [
+    "jshint",
+    "hint",
+    "lint",
+    "jslint"
+  ],
   "license": {
     "type": "MIT",
     "url": "http://www.opensource.org/licenses/mit-license.php"
@@ -25,6 +26,12 @@
   "scripts": {
     "test": "vows --spec"
   },
-  "bin": { "fixmyjs": "./bin/fixmyjs" },
-  "preferGlobal" : true
+  "bin": {
+    "fixmyjs": "./bin/fixmyjs"
+  },
+  "preferGlobal": true,
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
 }
