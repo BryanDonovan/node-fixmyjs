@@ -1,6 +1,6 @@
 var vows = require('vows');
 var assert = require('assert');
-var fixmyjs = require('../lib/');
+var fixmyjs = require('../');
 var EventEmitter = require('events').EventEmitter;
 var fs = require('fs');
 
@@ -15,12 +15,11 @@ tests.forEach(function (test) {
   var spec = {};
   spec["?"] = {
     topic: function () {
-      var ev = new EventEmitter();
+      var ev = fixmyjs([file_n]);
       ev.on("fixed", function (io) {
         this.callback(null, io.modified);
       }.bind(this));
 
-      fixmyjs.interpret([file_n], ev);
     },
 
     "ok": function (topic) {

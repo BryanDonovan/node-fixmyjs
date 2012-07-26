@@ -4,8 +4,7 @@ var foo = function () {
   var test = null;
 
   // missing semicolon
-  // already defined test
-  test = 12;
+  var test = 12;
 
 // missing semicolon
 };
@@ -21,16 +20,15 @@ function id() {
 
   if (200 > bar) {
   // bad indentation
-      bar = 14;
+    bar = 14;
   } else {
   // bad indentation + Mixed spaces & tabs
-              bar = 12;
+    bar = 12;
 
   }
 
 	if (true) {
-		// redeclaration
-		bar = 1;
+		var bar = 1;
 	// unnecessary semicolon (with tabs!)
 	}
 

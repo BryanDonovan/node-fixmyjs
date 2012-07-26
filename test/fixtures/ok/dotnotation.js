@@ -2,7 +2,8 @@ foo.HOME;
 
 foo.bar;
 
-foo.bar; foo.baz;
+foo.bar;
+foo.baz;
 
 foo.bar.baz;
 
@@ -17,4 +18,6 @@ lol.cats;
 
 hello["return"];
 
-foo["for"]; foo.that; foo['this'];
+foo["for"];
+foo.that;
+foo['this'];

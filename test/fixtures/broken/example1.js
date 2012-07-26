@@ -4,7 +4,6 @@ var foo = function () {
   var test = null;
 
   // missing semicolon
-  // already defined test
   var test = 12
 
 // missing semicolon
@@ -29,7 +28,6 @@ function id() {
   }
 
 	if (true) {
-		// redeclaration
 		var bar = 1;
 	// unnecessary semicolon (with tabs!)
 	};
