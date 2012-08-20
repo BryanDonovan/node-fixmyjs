@@ -5,8 +5,10 @@ var fixmyjs = require('../');
 commander
   .option('-c, --config [.jshintrc]', "Load your own config file")
   .option('-d, --diff', "Similar to dry-run")
-  .option('-r, --dry-run', "Performs a dry-run and shows you a diff")
+  .option('-i, --indent', "Enabled auto indent")
+  .option('-n, --indent-pref [tabs|spaces]', "Your indentation preference")
   .option('-p, --patch', "Output a patch file to stdout")
+  .option('-r, --dry-run', "Performs a dry-run and shows you a diff")
   .parse(process.argv);
 
 if (commander.args.length === 0) {

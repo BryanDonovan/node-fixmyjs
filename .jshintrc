@@ -45,7 +45,5 @@
   "strict": false,
   "trailing": true,
   "validthis": false,
-  "white": true,
-  "indentpref": "spaces",
-  "auto_indent": true
+  "white": true
 }

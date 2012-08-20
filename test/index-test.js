@@ -1,4 +1,5 @@
 var vows = require('vows');
+var commander = require('commander');
 var assert = require('assert');
 var fixmyjs = require('../');
 var EventEmitter = require('events').EventEmitter;
@@ -7,6 +8,9 @@ var fs = require('fs');
 var tests = fs.readdirSync(__dirname + "/fixtures/broken/");
 
 var specs = {};
+
+commander.indent = true;
+commander.indentPref = 'spaces';
 
 tests.forEach(function (test) {
   var file_n = __dirname + "/fixtures/broken/" + test;
