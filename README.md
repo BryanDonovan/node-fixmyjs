@@ -9,7 +9,7 @@ Meant to automatically fix your lint errors in a non-destructive way.
 
 ## How to Install
 
-    sudo npm install fixmyjs -g
+    [sudo] npm install fixmyjs -g
 
 ## API
 
